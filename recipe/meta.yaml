@@ -1,5 +1,5 @@
 {% set name = "autodataman" %}
-{% set version = "0.1" %}
+{% set version = "0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/cmecmetrics/autodataman/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 26727d3006f0c4c42dfd0203c64dc2f94ac05b74fa38b4355058c3c107f9364e 
+  sha256: d2a1a8e42709f8dc1a62a0dcd990e4db8bb741da2c7e0f60a4308becb4913335
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
   entry_points:
     - autodataman = autodataman.autodataman:main
@@ -36,7 +36,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Autodataman'
+  summary: Autodataman
   description: |
     The autodataman tool is intended to be a very lightweight climate data database and data distribution engine.
   doc_url: https://github.com/cmecmetrics/autodataman/tree/ao_python#readme
