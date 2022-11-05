@@ -1,5 +1,5 @@
 {% set name = "autodataman" %}
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/cmecmetrics/autodataman/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d2a1a8e42709f8dc1a62a0dcd990e4db8bb741da2c7e0f60a4308becb4913335
+  sha256: 8288211f48613b6bfa9b6fde3e44f21a1225967d9a135504ec2e3d8601d84250
 
 build:
   number: 0
